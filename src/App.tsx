@@ -1,12 +1,22 @@
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import ThemeToggle from "./components/UI/ThemeToggle";
+import Header from "./components/layout/Header";
+import Home from "./pages/Home";
 
 function App() {
   return (
     <>
-      <div className="container mx-auto my-auto">
-        <h1 className="btn btn-primary">Hello</h1>
-        <ThemeToggle />
+      <div className="App">
+        <Header />
+        <div className="">
+          <Routes>
+            <Route path="/" element={<Home />}/>
+          </Routes>
+        </div>
+        {/* 
+        {!loading && (!isAuthenticated || user.role !== 'admin') && (
+          <Footer />
+        )} */}
       </div>
     </>
   );
