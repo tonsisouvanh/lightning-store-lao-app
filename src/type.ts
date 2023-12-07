@@ -4,3 +4,8 @@ export interface CardType {
   description: string;
   url: string;
 }
+
+export interface QuestionData {
+  title: string;
+  description: string;
+}

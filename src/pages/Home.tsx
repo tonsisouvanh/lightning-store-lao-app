@@ -1,8 +1,10 @@
 import Benefit from "../components/layout/Benefit";
 import Discover from "../components/layout/Discover";
 import DiscoverPlace from "../components/layout/DiscoverPlace";
+import Faq from "../components/layout/FAQ";
 import Hero from "../components/layout/Hero";
 import HowItWorks from "../components/layout/HowItWorks";
+import LightningWalletSignup from "../components/layout/LightningWalletSignup";
 import { mockFoodData, mockRestaurantData } from "../data/data";
 type Props = {};
 
@@ -42,6 +44,8 @@ const Home = (props: Props) => {
         //   "absolute left-0 bottom-10 lg:top-1/3 lg:left-20 p-10 rounded-xl flex flex-col items-start gap-6 px-6 bg-white backdrop-blur-sm bg-white/50"
         // }
       />
+      <LightningWalletSignup />
+      <Faq />
     </>
   );
 };

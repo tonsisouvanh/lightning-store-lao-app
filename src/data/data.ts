@@ -1,4 +1,4 @@
-import { CardType } from "../type";
+import { CardType, QuestionData } from "../type";
 import { food,restaurant1,restaurant2 } from "../assets/images";
 
 
@@ -95,5 +95,36 @@ export const mockRestaurantData: CardType[] = [
     url: restaurant2,
     title: "",
     description: "",
+  },
+];
+
+
+
+
+export const mockQuestions: QuestionData[] = [
+  {
+    title: "How does Bitcoin work?",
+    description:
+      "Bitcoin is a decentralized digital currency that allows for secure and instant transactions. It operates on a technology called blockchain, which ensures transparency and eliminates the need for intermediaries like banks.",
+  },
+  {
+    title: "How can I buy Bitcoin?",
+    description:
+      "There are several ways to buy Bitcoin, including through cryptocurrency exchanges, peer-to-peer platforms, and Bitcoin ATMs. You can also receive Bitcoin as payment for goods and services.",
+  },
+  {
+    title: "Is Bitcoin safe to use?",
+    description:
+      "Bitcoin transactions are secured using cryptographic technology, making them highly secure. However, it's important to take precautions such as using a secure wallet and keeping your private keys safe.",
+  },
+  {
+    title: "Can I use Bitcoin for online shopping?",
+    description:
+      "Yes, many online stores accept Bitcoin as a form of payment. Look for the Bitcoin logo or check the store's payment options to see if they accept Bitcoin.",
+  },
+  {
+    title: "What are the advantages of using Bitcoin?",
+    description:
+      "Using Bitcoin offers several advantages, including lower transaction fees, faster international transfers, and increased privacy compared to traditional payment methods.",
   },
 ];

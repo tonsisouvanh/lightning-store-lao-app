@@ -12,6 +12,7 @@ import worldbg from "./worldbg.png";
 import food from "./food.jpg";
 import restaurant1 from "./restaurant1.jpg";
 import restaurant2 from "./restaurant2.jpg";
+import lightningelement from "./lightningelement.png";
 
 export {
   intro,
@@ -27,5 +28,6 @@ export {
   worldbg,
   food,
   restaurant1,
-  restaurant2
+  restaurant2,
+  lightningelement,
 };
