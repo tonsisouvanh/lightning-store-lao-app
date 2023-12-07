@@ -39,7 +39,7 @@ const DiscoverPlace = (props: Props) => {
             <div className="hidden md:flex mt-10">
               <Link to="#">
                 <button className="btn btn-outline whitespace-nowrap">
-                  View All
+                  View all
                 </button>
               </Link>
             </div>
@@ -53,7 +53,10 @@ const DiscoverPlace = (props: Props) => {
             </div>
             <div className="self-stretch flex-wrap w-full flex justify-start items-start gap-6">
               {mockImgs.map((ele) => (
-                <div key={ele.id} className="w-[2.8rem] h-[2.8rem] lg:w-[7rem] lg:h-[7rem]">
+                <div
+                  key={ele.id}
+                  className="w-[2.8rem] h-[2.8rem] lg:w-[7rem] lg:h-[7rem]"
+                >
                   <img
                     className="w-full h-full object-cover rounded-[5px]"
                     src={ele.url}
@@ -65,7 +68,7 @@ const DiscoverPlace = (props: Props) => {
           <div className="md:hidden mt-10">
             <Link to="#">
               <button className="btn btn-outline whitespace-nowrap">
-                View All
+                View all
               </button>
             </Link>
           </div>

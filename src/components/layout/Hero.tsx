@@ -27,7 +27,7 @@ const Hero = (props: Props) => {
             </div>
           </div>
           <div className="gap-4 flex flex-wrap">
-            <button className="btn btn-wide lg:btn-lg rounded-full btn-primary bg-primary">
+            <button className="btn btn-wide lg:btn-lg rounded-full btn-primary bg-primary shadow-2xl shadow-orange-500/20">
               SIGNUP
             </button>
             <button className="btn btn-wide lg:btn-lg rounded-full md:hidden btn-outline">

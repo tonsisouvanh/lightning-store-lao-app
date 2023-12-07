@@ -25,7 +25,7 @@ const HowItWorks = (props: Props) => {
           {/* Desktop */}
           <div className="hidden md:flex justify-start items-start gap-4">
             <div className="flex flex-col justify-center items-center gap-[18px]">
-              <div className="text-secondary md:text-5xl text-2xl font-bold leading-7">
+              <div className={headlinetStyle}>
                 50%
               </div>
               <p className="text-center text-neutral-700 text-xs lg:text-base font-normal">
@@ -33,7 +33,7 @@ const HowItWorks = (props: Props) => {
               </p>
             </div>
             <div className="flex flex-col justify-center items-center gap-[18px]">
-              <div className="text-secondary md:text-5xl text-2xl font-bold leading-7">
+              <div className={headlinetStyle}>
                 50%
               </div>
               <p className="text-center text-neutral-700 text-xs lg:text-base font-normal">
