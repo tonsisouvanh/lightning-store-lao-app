@@ -33,7 +33,7 @@ const HorizalSlider = ({
       slidesPerView: 2,
       spaceBetween: 10,
     },
-    768: {
+    1280: {
       slidesPerView: 3,
       spaceBetween: 20,
     },

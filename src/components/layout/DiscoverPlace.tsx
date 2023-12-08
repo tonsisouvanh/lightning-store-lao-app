@@ -22,7 +22,7 @@ const DiscoverPlace = (props: Props) => {
     <div className="relative w-full h-full overflow-hidden my-[1rem] md:my-[4rem] lg:my-[6rem]">
       <img
         src={miniplacesbg}
-        className="absolute object-cover opacity-10 z-[-1] left-0 top-0 right-0 bottom-0 w-full h-full"
+        className="absolute object-cover lg:object-contain opacity-50 z-[-1] left-0 top-0 right-0 bottom-0 w-full h-full"
         alt=""
       />
       <div className="container mx-auto p-[2rem] flex flex-col justify-center items-center gap-[4.5rem]">

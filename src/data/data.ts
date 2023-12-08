@@ -1,6 +1,6 @@
-import { CardType, QuestionData, TestimonialType } from "../type";
+import { BlogType, CardType, QuestionData, TestimonialType } from "../type";
 import { food, restaurant1, restaurant2 } from "../assets/images";
-
+import bitcoinundraw from "../assets/svg/bitcoinundraw.svg";
 export const themes = ["light", "dark"];
 // MenuData.ts
 
@@ -165,5 +165,58 @@ export const mockTestimonialsData: TestimonialType[] = [
     quote:
       "“As a frequent crypto user, Lightning Wallet has become my go-to for quick and secure transactions.”",
     // createdBy: 'Emma',
+  },
+];
+
+export const mockBlogsData: BlogType[] = [
+  {
+    id: 1,
+    imageUrl: bitcoinundraw,
+    category: "Payments",
+    title: "The Future of Bitcoin Payments",
+    description:
+      "Experience the future of Bitcoin payments with Lightning Wallet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    authorName: "John Doe",
+    authorTitle: "CEO, ABC Company",
+  },
+  {
+    id: 2,
+    imageUrl: bitcoinundraw,
+    category: "Security",
+    title: "Enhanced Security Features",
+    description:
+      "Security is our top priority. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam.",
+    authorName: "Jane Smith",
+    authorTitle: "CTO, XYZ Tech",
+  },
+  {
+    id: 3,
+    imageUrl: restaurant1,
+    category: "User-Friendly",
+    title: "Intuitive and User-Friendly Design",
+    description:
+      "Our user-friendly design ensures a seamless experience for both beginners and advanced users. Duis aute irure dolor in reprehenderit.",
+    authorName: "Alex Johnson",
+    authorTitle: "Product Manager, LMN Corp",
+  },
+  {
+    id: 4,
+    imageUrl: restaurant2,
+    category: "Convenience",
+    title: "Convenient and Efficient Transactions",
+    description:
+      "Make transactions with ease and efficiency. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    authorName: "Emily Brown",
+    authorTitle: "COO, PQR Services",
+  },
+  {
+    id: 5,
+    imageUrl: food,
+    category: "Innovation",
+    title: "Innovative Solutions for Crypto Enthusiasts",
+    description:
+      "Stay ahead with our innovative solutions tailored for crypto enthusiasts. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    authorName: "Chris Davis",
+    authorTitle: "Founder, Crypto Innovations",
   },
 ];

@@ -1,4 +1,5 @@
 import Benefit from "../components/layout/Benefit";
+import Blog from "../components/layout/Blogs";
 import Contact from "../components/layout/Contact";
 import Discover from "../components/layout/Discover";
 import DiscoverPlace from "../components/layout/DiscoverPlace";
@@ -53,6 +54,10 @@ const Home = (props: Props) => {
         subline="Hear from stores that successfully implemented Bitcoin payments."
       />
       <Contact />
+      <Blog
+        headline="Exploring All The Blogs Content"
+        subline="Stay updated with the latest news and trends."
+      />
     </>
   );
 };

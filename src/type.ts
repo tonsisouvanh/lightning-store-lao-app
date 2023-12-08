@@ -16,3 +16,14 @@ export interface QuestionData {
   title: string;
   description: string;
 }
+
+
+export interface BlogType {
+  id: number;
+  imageUrl: string;
+  category: string;
+  title: string;
+  description: string;
+  authorName: string;
+  authorTitle: string;
+}

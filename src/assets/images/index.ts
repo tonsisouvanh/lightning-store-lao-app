@@ -13,6 +13,7 @@ import food from "./food.jpg";
 import restaurant1 from "./restaurant1.jpg";
 import restaurant2 from "./restaurant2.jpg";
 import lightningelement from "./lightningelement.png";
+import rectlight from "./rectlight.png";
 
 export {
   intro,
@@ -30,4 +31,5 @@ export {
   restaurant1,
   restaurant2,
   lightningelement,
+  rectlight
 };
