@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { worldbg } from "../../assets/images/index";
 import { headlinetStyle, sublinetStyle } from "../../globalStyle";
-import HorizalSlider from "./sliders/HorizalSlider";
+import HorizalSlider from "./sliders/DiscoverSlider";
 import { CardType } from "../../type";
 
 type Props = {

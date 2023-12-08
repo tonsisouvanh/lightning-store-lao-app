@@ -1,6 +1,7 @@
 import { sublinetStyle } from "../../globalStyle";
 import { Link } from "react-router-dom";
 import { CardType } from "../../type";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 type Props = {
   cardData: CardType;
@@ -11,21 +12,28 @@ type Props = {
 const Card = ({ cardData, cardSize = "", topic }: Props) => {
   return (
     <div
-      className={`w-full h-[24.5rem] relative overflow-hidden rounded-2xl ${cardSize}`}
+      className={`relative h-[24.5rem] w-full overflow-hidden rounded-2xl ${cardSize}`}
     >
-      <img className="w-full h-full object-cover" src={cardData.url} alt="" />
-      <div className="absolute top-0 left-0 bottom-0 right-0 bg-gradient-to-t from-black to-transparent"></div>
-      <div className="absolute left-0 bottom-10 flex flex-col items-start gap-6 px-6">
-        <div className="flex-col items-start gap-2 flex">
+      <LazyLoadImage
+        className="h-full w-full object-cover"
+        src={cardData.url}
+        alt={cardData.title}
+        effect="blur"
+        width="100%"
+        height="100%"
+      />
+      <div className="absolute bottom-0 left-0 right-0 top-0 bg-gradient-to-t from-black to-transparent"></div>
+      <div className="absolute bottom-10 left-0 flex flex-col items-start gap-6 px-6">
+        <div className="flex flex-col items-start gap-2">
           <h1
-            className={`text-center md:text-start text-2xl lg:text-3xl font-bold lg:leading-tight text-primary`}
+            className={`text-center text-2xl font-bold text-primary md:text-start lg:text-3xl lg:leading-tight`}
           >
             {/* {cardData.title} */}
             Savory Haven
           </h1>
           <p
             className={`
-            ${sublinetStyle} !text-neutral-300 text-start lg:text-sm
+            ${sublinetStyle} text-start !text-neutral-300 lg:text-sm
             `}
           >
             {/* {cardData.description} */}
@@ -34,7 +42,7 @@ const Card = ({ cardData, cardSize = "", topic }: Props) => {
           </p>
         </div>
         <Link to="#" className="">
-          <button className="btn whitespace-nowrap btn-secondary btn-sm rounded-full px-6 md:px-14">
+          <button className="btn btn-secondary btn-sm whitespace-nowrap rounded-full px-6 md:px-14">
             SEE MORE
           </button>
         </Link>

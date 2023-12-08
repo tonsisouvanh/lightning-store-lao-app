@@ -1,4 +1,6 @@
 import { BlogType } from "../../type";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 type Props = {
   cardData: BlogType;
   cardSize?: string;
@@ -10,10 +12,13 @@ const BlogCard = ({ cardData }: Props) => {
     <>
       <div className="card card-bordered card-compact w-96 rounded-none bg-base-100 shadow-xl">
         <figure className="h-[15rem]">
-          <img
-            src={cardData.imageUrl}
+          <LazyLoadImage
             className="bg-gradient-to-br from-fuchsia-500 to-cyan-500 !object-contain px-1"
+            src={cardData.imageUrl}
             alt="bitcoin"
+            effect="blur"
+            width="100%"
+            height="100%"
           />
         </figure>
         <div className="card-body space-y-10">

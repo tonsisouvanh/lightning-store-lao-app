@@ -9,14 +9,14 @@ type Props = {};
 
 const Benefit = (props: Props) => {
   return (
-    <div className="relative w-full h-full overflow-hidden my-[1rem] md:my-[4rem] lg:my-[6rem]">
+    <div className="relative my-[1rem] h-full w-full overflow-hidden md:my-[4rem] lg:my-[6rem]">
       <img
         src={diamond}
-        className="absolute object-cover opacity-10 z-[-1] left-0 top-0 right-0 bottom-0 w-full h-full"
+        className="absolute bottom-0 left-0 right-0 top-0 z-[-1] h-full w-full object-cover opacity-10"
         alt=""
       />
-      <div className="container h-fit mx-auto p-[2rem] flex flex-col justify-center items-center gap-[4.5rem]">
-        <div className="flex-col md:flex-row justify-center items-center gap-5 md:gap-12 flex">
+      <div className="container mx-auto flex h-fit flex-col items-center justify-center gap-[4.5rem] p-[2rem]">
+        <div className="flex flex-col items-center justify-center gap-5 md:flex-row md:gap-12">
           <h1 className={headlinetStyle}>
             Experience the Benefits of Bitcoin Transactions
           </h1>
@@ -26,37 +26,43 @@ const Benefit = (props: Props) => {
             solution for seamless payments.
           </p>
         </div>
-        <div className="px-[57px] flex flex-col md:flex-row justify-center items-center gap-[35px]">
-          <div className="self-stretch flex-col justify-start items-center gap-3.5 flex">
-            <img className="w-[3.5rem] h-[3.5rem]" src={priceDown} />
+        <div className="flex flex-col items-center justify-center gap-[35px] px-[57px] md:flex-row">
+          <div className="flex flex-col items-center justify-start gap-3.5 self-stretch">
+            <img className="h-[3.5rem] w-[3.5rem]" src={priceDown} />
             <div
-              className={`text-xl lg:text-3xl text-center font-semibold lg:leading-tight`}
+              className={`text-center text-xl font-semibold lg:text-3xl lg:leading-tight`}
             >
               Low Fees
             </div>
-            <div className={`text-sm lg:text-md font-normal text-center leading-normal md:leading-tight text-base-content`}>
+            <div
+              className={`lg:text-md text-center text-sm font-normal leading-normal text-base-content md:leading-tight`}
+            >
               Enjoy minimal transaction costs with Bitcoin.
             </div>
           </div>
-          <div className="self-stretch flex-col justify-start items-center gap-3.5 flex">
-            <img className="w-[3.5rem] h-[3.5rem]" src={transaction} />
+          <div className="flex flex-col items-center justify-start gap-3.5 self-stretch">
+            <img className="h-[3.5rem] w-[3.5rem]" src={transaction} />
             <div
-              className={`text-xl lg:text-3xl text-center font-semibold lg:leading-tight`}
+              className={`text-center text-xl font-semibold lg:text-3xl lg:leading-tight`}
             >
               Fast transaction
             </div>
-            <div className={`text-sm lg:text-md font-normal text-center leading-normal md:leading-tight text-base-content`}>
+            <div
+              className={`lg:text-md text-center text-sm font-normal leading-normal text-base-content md:leading-tight`}
+            >
               Experience quick and efficient transfers with Bitcoin.
             </div>
           </div>
-          <div className="self-stretch flex-col justify-start items-center gap-3.5 flex">
-            <img className="w-[3.5rem] h-[3.5rem]" src={globalNetwork} />
+          <div className="flex flex-col items-center justify-start gap-3.5 self-stretch">
+            <img className="h-[3.5rem] w-[3.5rem]" src={globalNetwork} />
             <div
-              className={`text-xl lg:text-3xl text-center font-semibold lg:leading-tight`}
+              className={`text-center text-xl font-semibold lg:text-3xl lg:leading-tight`}
             >
               Global Acceptance
             </div>
-            <div className={`text-sm lg:text-md font-normal text-center leading-normal md:leading-tight text-base-content`}>
+            <div
+              className={`lg:text-md text-center text-sm font-normal leading-normal text-base-content md:leading-tight`}
+            >
               Use Bitcoin to make payments anywhere in the world.
             </div>
           </div>

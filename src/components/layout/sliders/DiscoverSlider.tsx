@@ -10,7 +10,6 @@ import "./styles.css";
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 
-
 import Card from "../../cards/Card";
 import { CardType } from "../../../type";
 
@@ -23,7 +22,7 @@ type Props = {
   topic?: string;
 };
 
-const HorizalSlider = ({
+const DiscoverSlider = ({
   slidesData,
   slidesPerView = 1,
   cardSize,
@@ -55,7 +54,7 @@ const HorizalSlider = ({
           breakpoints={breakpoints}
         >
           {slidesData?.map((slide) => (
-            <SwiperSlide key={slide.id} className="bg-transparent mb-10">
+            <SwiperSlide key={slide.id} className="mb-10 bg-transparent">
               <Card cardSize={cardSize} cardData={slide} topic={topic} />
             </SwiperSlide>
           ))}
@@ -67,4 +66,4 @@ const HorizalSlider = ({
   );
 };
 
-export default HorizalSlider;
+export default DiscoverSlider;
