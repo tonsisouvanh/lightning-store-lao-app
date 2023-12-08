@@ -1,5 +1,3 @@
-import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
-import { themes } from "../../data/data";
 import { useEffect, useState } from "react";
 
 const ThemeToggle = () => {

@@ -1,9 +1,8 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import bgIntro from "../../assets/images/intro.png";
 
-type Props = {};
 
-const Hero = (props: Props) => {
+const Hero = () => {
   return (
     <div className="relative h-full w-full overflow-hidden lg:min-h-screen">
       {/* <img

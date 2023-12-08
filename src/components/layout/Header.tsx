@@ -1,12 +1,11 @@
+import { IoMenu } from "react-icons/io5";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import ThemeToggle from "../UI/ThemeToggle";
 import { logo } from "../../assets/images";
 import { menuData } from "../../data/data";
-import { IoMenu } from "react-icons/io5";
+import ThemeToggle from "../UI/ThemeToggle";
 import Logo from "./Logo";
 
-type Props = {};
-const Header = (props: Props) => {
+const Header = () => {
   const location = useLocation();
   const { pathname } = location;
   return (

@@ -1,19 +1,18 @@
 import { Link } from "react-router-dom";
+import { mockBlogsData } from "../../data/data";
 import { headlinetStyle, sublinetStyle } from "../../globalStyle";
-import { mockBlogsData, mockTestimonialsData } from "../../data/data";
-import TestimonialCard from "../cards/TestimonialCard";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 import "./TestimonialsStyles.css";
 
 // import required modules
-import { Pagination, Navigation } from "swiper/modules";
+import { Navigation, Pagination } from "swiper/modules";
 import BlogCard from "../cards/BlogCard";
 
 import { rectlight } from "../../assets/images";

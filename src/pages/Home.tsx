@@ -9,9 +9,8 @@ import HowItWorks from "../components/layout/HowItWorks";
 import LightningWalletSignup from "../components/layout/LightningWalletSignup";
 import Testimonials from "../components/layout/Testimonials";
 import { mockFoodData, mockRestaurantData } from "../data/data";
-type Props = {};
 
-const Home = (props: Props) => {
+const Home = () => {
   return (
     <>
       <Hero />

@@ -1,18 +1,17 @@
-import polygonluminary from "../../assets/svg/polygonluminary.svg";
 import howitworks from "../../assets/images/howitworks.png";
+import polygonluminary from "../../assets/svg/polygonluminary.svg";
 import { headlinetStyle, sublinetStyle } from "../../globalStyle";
-type Props = {};
 
-const HowItWorks = (props: Props) => {
+const HowItWorks = () => {
   return (
-    <div className="relative w-full h-full overflow-hidden my-[1rem] md:my-[4rem] lg:my-[6rem]">
+    <div className="relative my-[1rem] h-full w-full overflow-hidden md:my-[4rem] lg:my-[6rem]">
       <img
         src={polygonluminary}
-        className="absolute object-cover opacity-5 z-[-1] left-0 top-0 right-0 bottom-0 w-full h-full"
+        className="absolute bottom-0 left-0 right-0 top-0 z-[-1] h-full w-full object-cover opacity-5"
         alt=""
       />
-      <div className="container mx-auto p-[2rem] flex flex-col justify-center items-center gap-[1.8rem] md:flex-row md:items-center md:justify-center">
-        <div className="flex-col justify-center items-start gap-5 md:gap-12 flex">
+      <div className="container mx-auto flex flex-col items-center justify-center gap-[1.8rem] p-[2rem] md:flex-row md:items-center md:justify-center">
+        <div className="flex flex-col items-start justify-center gap-5 md:gap-12">
           <h1 className={headlinetStyle}>
             Discover the Simplicity of Bitcoin Payments through Lightning
             Network
@@ -23,40 +22,36 @@ const HowItWorks = (props: Props) => {
             future of digital currency.
           </p>
           {/* Desktop */}
-          <div className="hidden md:flex justify-start items-start gap-4">
-            <div className="flex flex-col justify-center items-center gap-[18px]">
-              <div className={headlinetStyle}>
-                50%
-              </div>
-              <p className="text-center text-secondary text-xs lg:text-base font-normal">
+          <div className="hidden items-start justify-start gap-4 md:flex">
+            <div className="flex flex-col items-center justify-center gap-[18px]">
+              <div className={headlinetStyle}>50%</div>
+              <p className="text-center text-xs font-normal text-secondary lg:text-base">
                 Shop at your favorite stores and pay with Bitcoin.
               </p>
             </div>
-            <div className="flex flex-col justify-center items-center gap-[18px]">
-              <div className={headlinetStyle}>
-                50%
-              </div>
-              <p className="text-center text-secondary text-xs lg:text-base font-normal">
-              Experience the convenience of Bitcoin payments today.
+            <div className="flex flex-col items-center justify-center gap-[18px]">
+              <div className={headlinetStyle}>50%</div>
+              <p className="text-center text-xs font-normal text-secondary lg:text-base">
+                Experience the convenience of Bitcoin payments today.
               </p>
             </div>
           </div>
         </div>
-        <div className="w-full h-auto">
-          <img className="w-full h-full object-cover" src={howitworks} />
+        <div className="h-auto w-full">
+          <img className="h-full w-full object-cover" src={howitworks} />
         </div>
         {/* Mobile */}
-        <div className="md:hidden flex justify-between items-center gap-4">
-          <div className="flex flex-col justify-center items-center gap-[18px]">
+        <div className="flex items-center justify-between gap-4 md:hidden">
+          <div className="flex flex-col items-center justify-center gap-[18px]">
             <div className="text-2xl font-bold leading-7">50%</div>
             <div className={sublinetStyle}>
               Shop at your favorite stores and pay with Bitcoin.
             </div>
           </div>
-          <div className="flex flex-col justify-center items-center gap-[18px]">
+          <div className="flex flex-col items-center justify-center gap-[18px]">
             <div className="text-2xl font-bold leading-7">50%</div>
             <div className={sublinetStyle}>
-            Experience the convenience of Bitcoin payments today.
+              Experience the convenience of Bitcoin payments today.
             </div>
           </div>
         </div>

@@ -1,9 +1,8 @@
 import questionelement from "../../assets/svg/questionelement.svg";
 import { mockQuestions } from "../../data/data";
 import { headlinetStyle, sublinetStyle } from "../../globalStyle";
-type Props = {};
 
-const Faq = (props: Props) => {
+const Faq = () => {
   return (
     <div className="relative w-full h-full overflow-hidden my-[1rem] md:my-[4rem] lg:my-[6rem]">
       {/* <img

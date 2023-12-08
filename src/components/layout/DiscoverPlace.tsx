@@ -1,3 +1,5 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import Skeleton from "react-loading-skeleton";
 import { Link } from "react-router-dom";
 import {
   miniplacesbg,
@@ -6,8 +8,6 @@ import {
   place3,
 } from "../../assets/images/index";
 import { headlinetStyle, sublinetStyle } from "../../globalStyle";
-import Skeleton from "react-loading-skeleton";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const mockImgs = [
   { id: 1, url: place1 },
@@ -17,9 +17,8 @@ const mockImgs = [
   { id: 5, url: place3 },
 ];
 
-type Props = {};
 
-const DiscoverPlace = (props: Props) => {
+const DiscoverPlace = () => {
   return (
     <div className="relative my-[1rem] h-full w-full overflow-hidden md:my-[4rem] lg:my-[6rem]">
       <img

@@ -5,9 +5,8 @@ import {
   transaction,
 } from "../../assets/images/index";
 import { headlinetStyle, sublinetStyle } from "../../globalStyle";
-type Props = {};
 
-const Benefit = (props: Props) => {
+const Benefit = () => {
   return (
     <div className="relative my-[1rem] h-full w-full overflow-hidden md:my-[4rem] lg:my-[6rem]">
       <img
