@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-import { logo } from "../../assets/images";
 import {
   FaFacebookSquare,
   FaInstagramSquare,
@@ -7,6 +5,7 @@ import {
   FaYoutubeSquare,
 } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import Logo from "./Logo";
 
 const Footer = () => {
   return (
@@ -14,9 +13,7 @@ const Footer = () => {
       <div className="container mx-auto flex items-center justify-between p-[2rem]">
         <div className="flex w-full flex-col items-center justify-center gap-[63px] ">
           <div className="flex w-full flex-wrap items-start justify-between gap-[72px]">
-            <Link className="" to="/">
-              <img className="w-20" src={logo} alt="" />
-            </Link>
+            <Logo />
             <div className="flex flex-col items-center justify-center gap-3">
               <h1 className="text-md font-normal leading-[30px] text-base-content">
                 About Us

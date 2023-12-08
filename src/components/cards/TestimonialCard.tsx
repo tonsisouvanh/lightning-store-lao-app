@@ -6,7 +6,7 @@ type Props = {
   topic?: string;
 };
 
-const TestimonialCard = ({ cardData, cardSize = "", topic }: Props) => {
+const TestimonialCard = ({ cardData}: Props) => {
   return (
     <>
       <div className="card w-full lg:h-[18rem] bg-base-100 border shadow-xl">

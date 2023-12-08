@@ -99,7 +99,7 @@ export default {
           // accent: "",
           // neutral: "",
           // "base-100": "",
-          "base-200": "#f6fdff",
+          "base-200": "#f2f6fc",
           "base-300": "#FFFFFF",
           // info: "",
           success: "#7ED7C1",

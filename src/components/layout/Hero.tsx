@@ -20,7 +20,7 @@ const Hero = (props: Props) => {
       />
       <div className="container mx-auto w-full p-[2rem] md:grid md:grid-cols-2">
         <div className="col-span-1 flex flex-col items-start space-y-5 md:space-y-12 md:self-start">
-          <div className="flex-col gap-2 space-y-5 lg:mt-20 lg:gap-[30px]">
+          <div className="flex-col z-[1] gap-2 space-y-5 lg:mt-20 lg:gap-[30px]">
             <div className="relative">
               <div className="text-xs md:text-neutral-200">Lightning</div>
               <div className="text-md text-2xl font-semibold leading-relaxed md:text-neutral-200 lg:text-4xl xl:text-6xl">
@@ -28,7 +28,7 @@ const Hero = (props: Props) => {
                 is Here.
               </div>
             </div>
-            <div className="self-stretch text-xs font-normal leading-tight md:text-neutral-200 lg:text-xl">
+            <div className="self-stretch text-xs font-normal leading-tight  md:text-neutral-200 lg:text-xl">
               Effortless payments, anytime, anywhere. Explore the future of
               currency with Bitcoin Lightning – where speed meets security for a
               seamless transaction experience.

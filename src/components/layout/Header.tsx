@@ -3,14 +3,14 @@ import ThemeToggle from "../UI/ThemeToggle";
 import { logo } from "../../assets/images";
 import { menuData } from "../../data/data";
 import { IoMenu } from "react-icons/io5";
+import Logo from "./Logo";
 
 type Props = {};
 const Header = (props: Props) => {
   const location = useLocation();
   const { pathname } = location;
   return (
-    
-    <div className="w-full shadow z-[10] bg-base-300 sticky -top-1 p-[0.5rem]">
+    <div className="sticky -top-1 z-[10] w-full bg-base-300 p-[0.5rem] shadow">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <div className="dropdown">
@@ -19,7 +19,7 @@ const Header = (props: Props) => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
             >
               <li>
                 <a>Item 1</a>
@@ -40,9 +40,7 @@ const Header = (props: Props) => {
               </li>
             </ul>
           </div>
-          <Link className="hidden lg:flex" to="/">
-            <img className="w-20" src={logo} alt="" />
-          </Link>
+          <Logo />
         </div>
         <Link className="lg:hidden" to="/">
           <img className="w-20" src={logo} alt="" />
@@ -53,7 +51,7 @@ const Header = (props: Props) => {
               <NavLink
                 className={`${
                   pathname === item.path &&
-                  "text-primary underline-offset-2 underline font-bold"
+                  "font-bold text-primary underline underline-offset-2"
                 }`}
                 key={item.label}
                 to={item.path}

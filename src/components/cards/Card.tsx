@@ -1,7 +1,7 @@
-import { sublinetStyle } from "../../globalStyle";
-import { Link } from "react-router-dom";
-import { CardType } from "../../type";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { Link } from "react-router-dom";
+import { sublinetStyle } from "../../globalStyle";
+import { CardType } from "../../type";
 
 type Props = {
   cardData: CardType;
@@ -9,7 +9,7 @@ type Props = {
   topic?: string;
 };
 
-const Card = ({ cardData, cardSize = "", topic }: Props) => {
+const Card = ({ cardData, cardSize = "" }: Props) => {
   return (
     <div
       className={`relative h-[24.5rem] w-full overflow-hidden rounded-2xl ${cardSize}`}
