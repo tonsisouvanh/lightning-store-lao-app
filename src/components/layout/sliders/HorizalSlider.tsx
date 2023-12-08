@@ -1,5 +1,3 @@
-import { place1, place2, place3, worldbg } from "../../../assets/images/index";
-
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -11,11 +9,14 @@ import "./styles.css";
 
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
+
+
 import Card from "../../cards/Card";
 import { CardType } from "../../../type";
 
 type Props = {
   slidesData: CardType[];
+  // slidesData: T[];
   slidesPerView: number;
   breakpoints?: Record<number, { slidesPerView: number; spaceBetween: number }>;
   cardSize?: string;
@@ -24,7 +25,7 @@ type Props = {
 
 const HorizalSlider = ({
   slidesData,
-  slidesPerView,
+  slidesPerView = 1,
   cardSize,
   topic,
   breakpoints = {

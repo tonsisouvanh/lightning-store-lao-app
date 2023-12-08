@@ -1,10 +1,12 @@
 import Benefit from "../components/layout/Benefit";
+import Contact from "../components/layout/Contact";
 import Discover from "../components/layout/Discover";
 import DiscoverPlace from "../components/layout/DiscoverPlace";
 import Faq from "../components/layout/FAQ";
 import Hero from "../components/layout/Hero";
 import HowItWorks from "../components/layout/HowItWorks";
 import LightningWalletSignup from "../components/layout/LightningWalletSignup";
+import Testimonials from "../components/layout/Testimonials";
 import { mockFoodData, mockRestaurantData } from "../data/data";
 type Props = {};
 
@@ -46,6 +48,11 @@ const Home = (props: Props) => {
       />
       <LightningWalletSignup />
       <Faq />
+      <Testimonials
+        headline="Customer Tesitmonials"
+        subline="Hear from stores that successfully implemented Bitcoin payments."
+      />
+      <Contact />
     </>
   );
 };

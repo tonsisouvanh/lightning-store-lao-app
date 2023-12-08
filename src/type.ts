@@ -5,6 +5,13 @@ export interface CardType {
   url: string;
 }
 
+export interface TestimonialType {
+  id: number;
+  avatarUrl: string;
+  name: string;
+  quote: string;
+}
+
 export interface QuestionData {
   title: string;
   description: string;

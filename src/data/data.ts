@@ -1,6 +1,5 @@
-import { CardType, QuestionData } from "../type";
-import { food,restaurant1,restaurant2 } from "../assets/images";
-
+import { CardType, QuestionData, TestimonialType } from "../type";
+import { food, restaurant1, restaurant2 } from "../assets/images";
 
 export const themes = ["light", "dark"];
 // MenuData.ts
@@ -98,9 +97,6 @@ export const mockRestaurantData: CardType[] = [
   },
 ];
 
-
-
-
 export const mockQuestions: QuestionData[] = [
   {
     title: "How does Bitcoin work?",
@@ -126,5 +122,48 @@ export const mockQuestions: QuestionData[] = [
     title: "What are the advantages of using Bitcoin?",
     description:
       "Using Bitcoin offers several advantages, including lower transaction fees, faster international transfers, and increased privacy compared to traditional payment methods.",
+  },
+];
+
+export const mockTestimonialsData: TestimonialType[] = [
+  {
+    id: 1,
+    avatarUrl: "https://via.placeholder.com/32x32",
+    name: "Alice Johnson",
+    quote:
+      "“Using Lightning Wallet has made my transactions faster and more secure. It's a game-changer!”",
+    // createdBy: 'Alice',
+  },
+  {
+    id: 2,
+    avatarUrl: "https://via.placeholder.com/32x32",
+    name: "Bob Smith",
+    quote:
+      "“I love how easy it is to make payments with Lightning Wallet. It’s convenient and efficient!”",
+    // createdBy: 'Bob',
+  },
+  {
+    id: 3,
+    avatarUrl: "https://via.placeholder.com/32x32",
+    name: "Charlie Davis",
+    quote:
+      "“Lightning Wallet has simplified my crypto transactions. The speed and security are unmatched.”",
+    // createdBy: 'Charlie',
+  },
+  {
+    id: 4,
+    avatarUrl: "https://via.placeholder.com/32x32",
+    name: "David Brown",
+    quote:
+      "“I’ve had a great experience with Lightning Wallet. It’s reliable and user-friendly.”",
+    // createdBy: 'David',
+  },
+  {
+    id: 5,
+    avatarUrl: "https://via.placeholder.com/32x32",
+    name: "Emma Smith",
+    quote:
+      "“As a frequent crypto user, Lightning Wallet has become my go-to for quick and secure transactions.”",
+    // createdBy: 'Emma',
   },
 ];

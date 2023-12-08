@@ -27,7 +27,7 @@ const DiscoverPlace = (props: Props) => {
       />
       <div className="container mx-auto p-[2rem] flex flex-col justify-center items-center gap-[4.5rem]">
         <div className="self-stretch flex flex-col justify-start items-center md:items-start gap-[1.5rem] md:flex-row-reverse">
-          <div className="flex-col justify-center items-center gap-5 md:gap-2 flex">
+          <div className="flex-col justify-center items-center gap-5 flex">
             <h1 className={headlinetStyle}>
               Discover Interesting Places to Visit
             </h1>
