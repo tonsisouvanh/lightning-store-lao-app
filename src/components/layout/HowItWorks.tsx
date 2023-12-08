@@ -28,7 +28,7 @@ const HowItWorks = (props: Props) => {
               <div className={headlinetStyle}>
                 50%
               </div>
-              <p className="text-center text-neutral-700 text-xs lg:text-base font-normal">
+              <p className="text-center text-secondary text-xs lg:text-base font-normal">
                 Shop at your favorite stores and pay with Bitcoin.
               </p>
             </div>
@@ -36,7 +36,7 @@ const HowItWorks = (props: Props) => {
               <div className={headlinetStyle}>
                 50%
               </div>
-              <p className="text-center text-neutral-700 text-xs lg:text-base font-normal">
+              <p className="text-center text-secondary text-xs lg:text-base font-normal">
               Experience the convenience of Bitcoin payments today.
               </p>
             </div>

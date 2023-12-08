@@ -27,7 +27,7 @@ const Discover = ({
     <div className="relative w-full h-full overflow-hidden my-[1rem] md:my-[4rem] lg:my-[6rem]">
       <img
         src={worldbg}
-        className="absolute object-cover opacity-10 z-[-1] left-0 top-0 right-0 bottom-0 w-full h-full"
+        className="absolute hidden object-cover opacity-10 z-[-1] left-0 top-0 right-0 bottom-0 w-full h-full"
         alt=""
       />
       <div className="container h-fit mx-auto p-[2rem] flex flex-col justify-center items-center gap-[2.5rem]">

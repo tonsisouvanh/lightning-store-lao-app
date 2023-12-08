@@ -41,7 +41,7 @@ const Faq = (props: Props) => {
             {mockQuestions.map((ele, index) => (
               <div
                 key={index}
-                className="collapse collapse-arrow join-item hover:bg-neutral-100 transition duration-300"
+                className="collapse collapse-arrow join-item hover:bg-base-200 transition duration-300"
               >
                 <input type="radio" name="my-accordion-4" />
                 <div className="collapse-title text-lg font-medium">

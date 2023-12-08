@@ -11,7 +11,7 @@ type Props = {};
 
 const LightningWalletSignup = (props: Props) => {
   return (
-    <div className="relative w-full h-full overflow-hidden my-[1rem] md:my-[4rem] lg:my-[6rem] bg-[#F8FAFD]">
+    <div className="relative w-full h-full overflow-hidden my-[1rem] md:my-[4rem] lg:my-[6rem] bg-base-200">
       {/* <img
         src={diamond}
         className="absolute object-cover opacity-10 z-[-1] left-0 top-0 right-0 bottom-0 w-full h-full"

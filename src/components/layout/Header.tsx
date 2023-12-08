@@ -10,7 +10,7 @@ const Header = (props: Props) => {
   const { pathname } = location;
   return (
     
-    <div className="w-full shadow z-[10] bg-base-100 sticky -top-1 p-[0.5rem]">
+    <div className="w-full shadow z-[10] bg-base-300 sticky -top-1 p-[0.5rem]">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <div className="dropdown">

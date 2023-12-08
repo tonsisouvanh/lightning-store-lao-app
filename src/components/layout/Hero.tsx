@@ -5,7 +5,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div className="relative h-full w-full overflow-hidden border border-red-500 lg:min-h-screen">
+    <div className="relative h-full w-full overflow-hidden lg:min-h-screen">
       {/* <img
         src={bgIntro}
         className="md:absolute md:object-cover md:z-[-1] md:left-0 md:top-0 md:right-0 md:bottom-0 w-full h-auto"

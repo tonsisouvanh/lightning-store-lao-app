@@ -1,25 +1,17 @@
-import { Link, NavLink, useLocation } from "react-router-dom";
-import ThemeToggle from "../UI/ThemeToggle";
-import { menuData } from "../../data/data";
-import { IoMenu } from "react-icons/io5";
+import { Link } from "react-router-dom";
 import { logo } from "../../assets/images";
 import {
   FaFacebookSquare,
   FaInstagramSquare,
   FaTelegram,
-  FaYoutube,
   FaYoutubeSquare,
 } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 
-type Props = {};
-const Footer = (props: Props) => {
-  const location = useLocation();
-  const { pathname } = location;
+const Footer = () => {
   return (
-    <footer className="relative my-[1rem] h-full w-full overflow-hidden bg-base-100 md:my-[4rem] lg:my-[6rem]">
+    <footer className="relative my-[1rem] h-full w-full overflow-hidden bg-base-300 md:my-[4rem] lg:my-[6rem]">
       <div className="container mx-auto flex items-center justify-between p-[2rem]">
-        {/* <div className="flex w-full flex-col items-center justify-center gap-6 px-6 py-12"> */}
         <div className="flex w-full flex-col items-center justify-center gap-[63px] ">
           <div className="flex w-full flex-wrap items-start justify-between gap-[72px]">
             <Link className="" to="/">
@@ -99,7 +91,7 @@ const Footer = (props: Props) => {
                   type="text"
                   placeholder="Your email address"
                 />
-                <button className="btn btn-secondary">Subscribe</button>
+                <button className="btn btn-primary">Subscribe</button>
               </div>
               <div className=" text-center  text-sm font-normal leading-[30px] text-base-content">
                 By subscribing, you agree to our Privacy Policy and consent to
@@ -107,7 +99,7 @@ const Footer = (props: Props) => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row w-full items-start md:justify-between gap-[30px]  border-t border-sky-900 pt-11">
+          <div className="flex w-full flex-col items-start gap-[30px] border-t border-secondary  pt-11 md:flex-row md:justify-between">
             <div className="flex items-start justify-start gap-[63px] ">
               <div className="flex shrink grow basis-0 items-center justify-start gap-3">
                 <div className=" text-md font-normal leading-[30px] text-base-content">
@@ -133,7 +125,6 @@ const Footer = (props: Props) => {
             </div>
           </div>
         </div>
-        {/* </div> */}
       </div>
     </footer>
   );
