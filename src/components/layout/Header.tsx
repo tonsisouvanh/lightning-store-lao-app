@@ -9,7 +9,7 @@ const Header = () => {
   const location = useLocation();
   const { pathname } = location;
   return (
-    <div className="sticky -top-1 z-[10] w-full bg-base-300 p-[0.5rem] shadow">
+    <div className="sticky -top-1 z-[10] w-full bg-base-300 p-[0.8rem] shadow">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <div className="dropdown">
@@ -42,7 +42,10 @@ const Header = () => {
           <Logo />
         </div>
         <Link className="lg:hidden" to="/">
-          <img className="w-20" src={logo} alt="" />
+          {/* <div className="rounded-full bg-white px-2 py-4">
+            <img className="w-14" src={logo} alt="" />
+          </div> */}
+          <h1 className="font-arimo font-bold">LIGHTNING STORE LAO.</h1>
         </Link>
         <div className="hidden lg:flex">
           <ul className="menu menu-horizontal px-1">

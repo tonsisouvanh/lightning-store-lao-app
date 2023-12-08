@@ -17,7 +17,7 @@ const ThemeToggle = () => {
       <label
         onClick={() => setTheme(theme === "light" ? "dark" : "light")}
         key={theme}
-        className="swap swap-rotate"
+        className="btn btn-ghost swap swap-rotate"
       >
         {/* this hidden checkbox controls the state */}
 

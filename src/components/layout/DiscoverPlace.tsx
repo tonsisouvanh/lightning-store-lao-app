@@ -1,4 +1,4 @@
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import Skeleton from "react-loading-skeleton";
 import { Link } from "react-router-dom";
 import {
@@ -17,13 +17,12 @@ const mockImgs = [
   { id: 5, url: place3 },
 ];
 
-
 const DiscoverPlace = () => {
   return (
     <div className="relative my-[1rem] h-full w-full overflow-hidden md:my-[4rem] lg:my-[6rem]">
       <img
         src={miniplacesbg}
-        className="absolute bottom-0 left-0 right-0 top-0 z-[-1] h-full w-full object-cover opacity-50 lg:object-contain"
+        className="absolute bottom-0 left-0 right-0 top-0 z-[-1] hidden h-full w-full object-cover opacity-50 lg:object-contain"
         alt=""
       />
       <div className="container mx-auto flex flex-col items-center justify-center gap-[4.5rem] p-[2rem]">
