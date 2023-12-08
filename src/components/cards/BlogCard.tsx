@@ -1,19 +1,18 @@
-import { BlogType, TestimonialType } from "../../type";
-import bitcoinundraw from "../../assets/svg/bitcoinundraw.svg";
+import { BlogType } from "../../type";
 type Props = {
   cardData: BlogType;
   cardSize?: string;
   topic?: string;
 };
 
-const BlogCard = ({ cardData, cardSize = "", topic }: Props) => {
+const BlogCard = ({ cardData }: Props) => {
   return (
     <>
       <div className="card card-bordered card-compact w-96 rounded-none bg-base-100 shadow-xl">
         <figure className="h-[15rem]">
           <img
             src={cardData.imageUrl}
-            className="bg-gradient-to-br px-1 from-fuchsia-500 to-cyan-500 !object-contain"
+            className="bg-gradient-to-br from-fuchsia-500 to-cyan-500 !object-contain px-1"
             alt="bitcoin"
           />
         </figure>
