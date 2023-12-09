@@ -1,8 +1,10 @@
+import { useEffect, useState } from "react";
 import howitworks from "../../assets/images/howitworks.png";
 import polygonluminary from "../../assets/svg/polygonluminary.svg";
 import { headlinetStyle, sublinetStyle } from "../../globalStyle";
 
 const HowItWorks = () => {
+
   return (
     <div className="relative my-[1rem] h-full w-full overflow-hidden md:my-[4rem] lg:my-[6rem]">
       <img
@@ -25,13 +27,13 @@ const HowItWorks = () => {
           <div className="hidden items-start justify-start gap-4 md:flex">
             <div className="flex flex-col items-center justify-center gap-[18px]">
               <div className={headlinetStyle}>50%</div>
-              <p className="text-center text-xs font-normal text-secondary lg:text-base">
+              <p className="text-center text-xs font-light text-secondary lg:text-base">
                 Shop at your favorite stores and pay with Bitcoin.
               </p>
             </div>
             <div className="flex flex-col items-center justify-center gap-[18px]">
               <div className={headlinetStyle}>50%</div>
-              <p className="text-center text-xs font-normal text-secondary lg:text-base">
+              <p className={"text-center text-xs font-light text-secondary lg:text-base"}>
                 Experience the convenience of Bitcoin payments today.
               </p>
             </div>

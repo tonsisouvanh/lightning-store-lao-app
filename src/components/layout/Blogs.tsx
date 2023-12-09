@@ -72,7 +72,7 @@ Props) => {
           <p className="w-full text-center">No eles found.</p>
         )}
         <Link to="#">
-          <button className="btn btn-outline whitespace-nowrap">
+          <button className="btn btn-secondary btn-outline whitespace-nowrap">
             View all
           </button>
         </Link>
