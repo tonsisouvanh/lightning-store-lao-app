@@ -1,5 +1,4 @@
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import Skeleton from "react-loading-skeleton";
 import { Link } from "react-router-dom";
 import {
   miniplacesbg,
@@ -10,12 +9,24 @@ import {
 import { headlinetStyle, sublinetStyle } from "../../globalStyle";
 
 const mockImgs = [
-  { id: 1, url: place1 },
-  { id: 2, url: place2 },
-  { id: 3, url: place3 },
-  { id: 4, url: place3 },
-  { id: 5, url: place3 },
+  { id: 1, url: place1, name: "Pha That Luang" },
+  { id: 2, url: place2, name: "Pa Tu Xay" },
+  { id: 3, url: place3, name: "Tat Sone (Water fall)" },
+  { id: 4, url: place3, name: "Tat Sone (Water fall)" },
+  { id: 5, url: place3, name: "Tat Sone (Water fall)" },
 ];
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+import "./TestimonialsStyles.css";
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 const DiscoverPlace = () => {
   return (
@@ -44,7 +55,7 @@ const DiscoverPlace = () => {
               </Link>
             </div>
           </div>
-          <div className="space-y-5">
+          {/* <div className="space-y-5">
             <div className="h-auto w-full lg:h-[32.5rem] lg:w-[44.5rem]">
               {(
                 <LazyLoadImage
@@ -75,7 +86,45 @@ const DiscoverPlace = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
+          <Swiper
+            spaceBetween={30}
+            centeredSlides={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={true}
+            modules={[Autoplay, Pagination, Navigation]}
+            className="mySwiper"
+          >
+            {mockImgs?.map((slide) => (
+              <SwiperSlide key={slide.id} className="mb-10 bg-transparent">
+                <div className="relative h-[20rem] w-full lg:h-[32.5rem] lg:w-[44.5rem]">
+                  {/* <img
+                    className="h-full w-full rounded-[5px] object-cover"
+                    src={slide.url}
+                  /> */}
+                  <LazyLoadImage
+                    className="h-full w-full rounded-[10px] object-cover"
+                    src={slide.url}
+                    alt={"place"}
+                    effect="blur"
+                    width="100%"
+                    height="100%"
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-white/30 p-5 backdrop-blur-sm">
+                    <h1 className="text-base text-white lg:text-xl">
+                      {slide.name}
+                    </h1>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
           <div className="mt-10 md:hidden">
             <Link to="#">
               <button className="btn btn-outline whitespace-nowrap">

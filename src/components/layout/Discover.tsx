@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { worldbg } from "../../assets/images/index";
 import { headlinetStyle, sublinetStyle } from "../../globalStyle";
-import HorizalSlider from "./sliders/DiscoverSlider";
+import DiscoverSlider from "./sliders/DiscoverSlider";
 import { CardType } from "../../type";
 
 type Props = {
@@ -35,7 +35,7 @@ const Discover = ({
           <h1 className={headlinetStyle}>{headline}</h1>
           <p className={sublinetStyle}>{subline}</p>
         </div>
-        <HorizalSlider
+        <DiscoverSlider
           breakpoints={breakpoints}
           slidesPerView={slidesPerView}
           slidesData={slidesData}

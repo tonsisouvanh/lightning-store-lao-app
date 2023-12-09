@@ -1,6 +1,5 @@
 import { IoMenu } from "react-icons/io5";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { logo } from "../../assets/images";
 import { menuData } from "../../data/data";
 import ThemeToggle from "../UI/ThemeToggle";
 import Logo from "./Logo";
@@ -42,9 +41,6 @@ const Header = () => {
           <Logo />
         </div>
         <Link className="lg:hidden" to="/">
-          {/* <div className="rounded-full bg-white px-2 py-4">
-            <img className="w-14" src={logo} alt="" />
-          </div> */}
           <h1 className="font-arimo font-bold">LIGHTNING STORE LAO.</h1>
         </Link>
         <div className="hidden lg:flex">

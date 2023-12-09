@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import howitworks from "../../assets/images/howitworks.png";
 import polygonluminary from "../../assets/svg/polygonluminary.svg";
 import { headlinetStyle, sublinetStyle } from "../../globalStyle";
