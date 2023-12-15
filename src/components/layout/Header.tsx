@@ -1,6 +1,6 @@
 import { IoMenu } from "react-icons/io5";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { menuData } from "../../data/data";
+import { menuItems } from "../../data/data";
 import ThemeToggle from "../UI/ThemeToggle";
 import Logo from "./Logo";
 
@@ -45,7 +45,7 @@ const Header = () => {
         </Link>
         <div className="hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            {menuData.map((item) => (
+            {menuItems.map((item) => (
               <NavLink
                 className={`${
                   pathname === item.path &&

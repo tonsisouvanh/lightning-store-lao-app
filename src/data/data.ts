@@ -9,7 +9,7 @@ export interface MenuItem {
   path: string;
 }
 
-export const menuData: MenuItem[] = [
+export const menuItems: MenuItem[] = [
   { label: "Home", path: "/" },
   { label: "About", path: "/about" },
   { label: "How It Works", path: "/how-it-works" },
@@ -17,43 +17,43 @@ export const menuData: MenuItem[] = [
   { label: "Stores", path: "/stores" },
   { label: "Contact", path: "/contact" },
   { label: "FAQ", path: "/faq" },
-  { label: "Blog/News", path: "/blog" },
+  { label: "Blog/News", path: "/bloglist" },
 ];
 
 export const mockFoodData: CardType[] = [
   {
     id: 1,
-    url: food,
+    imageUrl: food,
     title: "",
     description: "",
   },
   {
     id: 2,
-    url: food,
+    imageUrl: food,
     title: "",
     description: "",
   },
   {
     id: 3,
-    url: food,
+    imageUrl: food,
     title: "",
     description: "",
   },
   {
     id: 4,
-    url: food,
+    imageUrl: food,
     title: "",
     description: "",
   },
   {
     id: 5,
-    url: food,
+    imageUrl: food,
     title: "",
     description: "",
   },
   {
     id: 6,
-    url: food,
+    imageUrl: food,
     title: "",
     description: "",
   },
@@ -61,37 +61,37 @@ export const mockFoodData: CardType[] = [
 export const mockRestaurantData: CardType[] = [
   {
     id: 1,
-    url: restaurant1,
+    imageUrl: restaurant1,
     title: "",
     description: "",
   },
   {
     id: 2,
-    url: restaurant2,
+    imageUrl: restaurant2,
     title: "",
     description: "",
   },
   {
     id: 3,
-    url: restaurant1,
+    imageUrl: restaurant1,
     title: "",
     description: "",
   },
   {
     id: 4,
-    url: restaurant2,
+    imageUrl: restaurant2,
     title: "",
     description: "",
   },
   {
     id: 5,
-    url: restaurant1,
+    imageUrl: restaurant1,
     title: "",
     description: "",
   },
   {
     id: 6,
-    url: restaurant2,
+    imageUrl: restaurant2,
     title: "",
     description: "",
   },

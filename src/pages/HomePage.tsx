@@ -10,7 +10,7 @@ import LightningWalletSignup from "../components/layout/LightningWalletSignup";
 import Testimonials from "../components/layout/Testimonials";
 import { mockFoodData, mockRestaurantData } from "../data/data";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <>
       <Hero />
@@ -61,4 +61,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;

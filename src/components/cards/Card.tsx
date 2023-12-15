@@ -16,7 +16,7 @@ const Card = ({ cardData, cardSize = "" }: Props) => {
     >
       <LazyLoadImage
         className="h-full w-full object-cover"
-        src={cardData.url}
+        src={cardData.imageUrl}
         alt={cardData.title}
         effect="blur"
         width="100%"

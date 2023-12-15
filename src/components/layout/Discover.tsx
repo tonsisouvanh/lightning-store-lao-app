@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 import { worldbg } from "../../assets/images/index";
 import { headlinetStyle, sublinetStyle } from "../../globalStyle";
 import DiscoverSlider from "./sliders/DiscoverSlider";
-import { CardType } from "../../type";
+import { CardType, BlogType } from "../../type";
 
 type Props = {
   headline: string;
   subline: string;
-  slidesData: CardType[];
+  slidesData: CardType[] | BlogType[];
   slidesPerView: number;
   cardSize?: string;
   breakpoints?: Record<number, { slidesPerView: number; spaceBetween: number }>;
@@ -24,14 +24,14 @@ const Discover = ({
   topic,
 }: Props) => {
   return (
-    <div className="relative w-full h-full overflow-hidden my-[1rem] md:my-[4rem] lg:my-[6rem]">
+    <div className="relative my-[1rem] h-full w-full overflow-hidden md:my-[4rem] lg:my-[6rem]">
       <img
         src={worldbg}
-        className="absolute hidden object-cover opacity-10 z-[-1] left-0 top-0 right-0 bottom-0 w-full h-full"
+        className="absolute bottom-0 left-0 right-0 top-0 z-[-1] hidden h-full w-full object-cover opacity-10"
         alt=""
       />
-      <div className="container h-fit mx-auto p-[2rem] flex flex-col justify-center items-center gap-[2.5rem]">
-        <div className="flex-col justify-center items-center gap-2 md:gap-4 flex">
+      <div className="container mx-auto flex h-fit flex-col items-center justify-center gap-[2.5rem] p-[2rem]">
+        <div className="flex flex-col items-center justify-center gap-2 md:gap-4">
           <h1 className={headlinetStyle}>{headline}</h1>
           <p className={sublinetStyle}>{subline}</p>
         </div>

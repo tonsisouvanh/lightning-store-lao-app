@@ -9,11 +9,11 @@ import {
 import { headlinetStyle, sublinetStyle } from "../../globalStyle";
 
 const mockImgs = [
-  { id: 1, url: place1, name: "Pha That Luang" },
-  { id: 2, url: place2, name: "Pa Tu Xay" },
-  { id: 3, url: place3, name: "Tat Sone (Water fall)" },
-  { id: 4, url: place3, name: "Tat Sone (Water fall)" },
-  { id: 5, url: place3, name: "Tat Sone (Water fall)" },
+  { id: 1, imageUrl: place1, name: "Pha That Luang" },
+  { id: 2, imageUrl: place2, name: "Pa Tu Xay" },
+  { id: 3, imageUrl: place3, name: "Tat Sone (Water fall)" },
+  { id: 4, imageUrl: place3, name: "Tat Sone (Water fall)" },
+  { id: 5, imageUrl: place3, name: "Tat Sone (Water fall)" },
 ];
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -81,7 +81,7 @@ const DiscoverPlace = () => {
                 >
                   <img
                     className="h-full w-full rounded-[5px] object-cover"
-                    src={ele.url}
+                    src={ele.imageUrl}
                   />
                 </div>
               ))}
@@ -106,11 +106,11 @@ const DiscoverPlace = () => {
                 <div className="relative h-[20rem] w-full lg:h-[32.5rem] lg:w-[44.5rem]">
                   {/* <img
                     className="h-full w-full rounded-[5px] object-cover"
-                    src={slide.url}
+                    src={slide.imageUrl}
                   /> */}
                   <LazyLoadImage
                     className="h-full w-full rounded-[10px] object-cover"
-                    src={slide.url}
+                    src={slide.imageUrl}
                     alt={"place"}
                     effect="blur"
                     width="100%"
