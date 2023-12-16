@@ -17,7 +17,7 @@ export const menuItems: MenuItem[] = [
   { label: "Stores", path: "/stores" },
   { label: "Contact", path: "/contact" },
   { label: "FAQ", path: "/faq" },
-  { label: "Blog/News", path: "/bloglist" },
+  { label: "Blog/News", path: "/blog/bloglist" },
 ];
 
 export const mockFoodData: CardType[] = [

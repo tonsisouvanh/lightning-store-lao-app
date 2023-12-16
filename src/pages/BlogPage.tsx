@@ -1,5 +1,5 @@
 import { mockBlogsData } from "../data/data";
-import createblog from '../assets/svg/createblog.svg'
+import createblog from "../assets/svg/createblog.svg";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -39,10 +39,12 @@ const BlogPage = () => {
                   />
                 </div>
                 <div className="flex flex-col items-center text-center md:w-1/2 md:items-start md:pl-16 md:text-left lg:flex-grow lg:pl-24">
-                  <h1 className="title-font mb-4 text-3xl font-medium text-base-content sm:text-4xl">
+                  <h1 className="title-font mb-4 text-3xl font-medium text-secondary sm:text-4xl">
                     {item?.title}
                   </h1>
-                  <p className="mb-4 leading-relaxed">{item?.description}</p>
+                  <p className="mb-4 leading-relaxed text-secondary/60">
+                    {item?.description}
+                  </p>
                   <div className="mb-10 flex items-center gap-2">
                     <div className="badge badge-outline">{item?.category}</div>
                   </div>
@@ -150,12 +152,12 @@ const BlogPage = () => {
             <div className="container mx-auto px-5 py-24">
               <div className="mb-16 flex w-full flex-col gap-2">
                 <div className="mb-6 w-full lg:mb-0 lg:w-1/2">
-                  <h1 className="title-font mb-2 text-2xl font-medium text-base-content sm:text-3xl">
+                  <h1 className="title-font mb-2 text-2xl font-medium text-secondary sm:text-3xl">
                     Discover the Latest Blogs
                   </h1>
                   <div className="h-1 w-20 rounded bg-indigo-500"></div>
                 </div>
-                <p className="w-full leading-relaxed text-gray-500 lg:w-1/2">
+                <p className="w-full leading-relaxed text-gray-500 text-secondary/60 lg:w-1/2">
                   Stay informed with our concise blog summaries.
                 </p>
               </div>
@@ -228,19 +230,21 @@ const BlogPage = () => {
         </div>
 
         {/* Sign up to create blog */}
-        <div className="container mx-auto px-5 py-20">
+        <div className="bg-base-200 px-5 py-20">
           <div className="container mx-auto flex flex-wrap px-5 py-24">
             <div className=" mb-auto mt-auto flex flex-wrap content-start sm:w-2/3 sm:pr-10 lg:w-1/2">
               <div className="mb-6 w-full px-4 sm:p-4">
-                <h1 className="title-font mb-2 text-4xl font-medium text-base-content">
+                <h1 className="title-font mb-2 text-4xl font-medium text-secondary">
                   Empower Your Voice
                 </h1>
-                <div className="leading-relaxed">
+                <div className="leading-relaxed text-secondary/60">
                   Write and Discover Blogs, share your insights and explore
                   engaging blog summaries.
                 </div>
               </div>
-              <button className="btn btn-primary">Create Blog</button>
+              <Link to="/blog/create">
+                <button className="btn btn-primary">Create Blog</button>
+              </Link>
             </div>
             <div className="mt-6 w-full overflow-hidden rounded-lg sm:mt-0 lg:w-1/2">
               <img

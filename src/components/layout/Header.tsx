@@ -19,23 +19,20 @@ const Header = () => {
               tabIndex={0}
               className="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
             >
-              <li>
-                <a>Item 1</a>
-              </li>
-              <li>
-                <a>Parent</a>
-                <ul className="p-2">
+              {menuItems.map((item) => (
+                <NavLink
+                  className={`${
+                    pathname === item.path &&
+                    "font-bold text-primary underline underline-offset-2"
+                  }`}
+                  key={item.label}
+                  to={item.path}
+                >
                   <li>
-                    <a>Submenu 1</a>
+                    <p>{item.label}</p>
                   </li>
-                  <li>
-                    <a>Submenu 2</a>
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <a>Item 3</a>
-              </li>
+                </NavLink>
+              ))}
             </ul>
           </div>
           <Logo />
